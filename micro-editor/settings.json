@@ -1,0 +1,10 @@
+{
+	"colorscheme": "my-simple-theme",
+	"scrollbar": true,
+	"scrollmargin": 1,
+	"scrollspeed": 1,
+	"statusformatl": "$(filename) $(modified)$(line),$(col) $(status.paste)| ft:$(opt:filetype) | $(opt:fileformat) | $(opt:encoding)",
+	"statusformatr": "$(bind:ToggleKeyMenu): bindings",
+	"tabhighlight": true,
+	"tabsize": 2
+}
