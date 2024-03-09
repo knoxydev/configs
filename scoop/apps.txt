@@ -2,6 +2,7 @@
 print the code in the terminal
 
 - clink
+powerful bash-style command line editing for cmd.exe
 
 - fd
 a simple, fast and user-friendly alternative to 'find'
