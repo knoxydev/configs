@@ -1,0 +1,11 @@
+[
+   {
+       "keys": ["ctrl+`"],
+       "command": "terminus_open",
+       "args" : {
+           "cmd": "cmd.exe",
+           "cwd": "${file_path:${folder}}",
+           "panel_name": "Terminus"
+       }
+   }
+]

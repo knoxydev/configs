@@ -1,0 +1,15 @@
+{
+	"color_scheme": "Alabaster Dark.sublime-color-scheme",
+	"theme": "Fleetish.sublime-theme",
+	"font_face": "JetBrains Mono",
+	"font_options": ["no_liga", "no_clig", "no_calt"],
+	"tab_size": 2,
+	"scroll_speed": 0.0,
+	"word_wrap": false,
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"font_size": 11,
+	"index_files": true,
+}

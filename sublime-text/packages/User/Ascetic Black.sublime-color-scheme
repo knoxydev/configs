@@ -1,0 +1,16 @@
+// Documentation at https://www.sublimetext.com/docs/color_schemes.html
+{
+	"variables":
+	{
+	},
+	"globals":
+	{
+		"background" : "#0A0A0A",
+		"foreground" : "#AAAAAA",
+		"selection" : "#303030",
+	},
+	"rules":
+	[
+		
+	]
+}
