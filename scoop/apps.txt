@@ -1,6 +1,13 @@
 - bat
+print the code in the terminal
+
 - clink
+
 - fd
+a simple, fast and user-friendly alternative to 'find'
+
 - fx
+terminal JSON viewer & processor
+
 - helix
 - micro
