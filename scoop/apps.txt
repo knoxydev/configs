@@ -10,5 +10,9 @@ a simple, fast and user-friendly alternative to 'find'
 - fx
 terminal JSON viewer & processor
 
+- lf
+terminal file manager
+[https://github.com/gokcehan/lf]
+
 - helix
 - micro

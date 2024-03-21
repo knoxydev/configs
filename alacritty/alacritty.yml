@@ -18,7 +18,7 @@ font:
   normal:
     family: JetBrains Mono
     style: Bold
-  size: 11
+  size: 10.5
 
 cursor:
   style: Beam
