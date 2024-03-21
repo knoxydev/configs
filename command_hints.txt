@@ -1,0 +1,19 @@
+- WINDOWS
+
+# delete file
+del test.txt
+
+# delete read-only file
+del /f test.txt
+
+# delete all files with certain type
+del *.txt
+
+# delete folder if it's empty
+rmdir folder_name
+
+# delete folder if there're sub-folders
+rmdir /s folder_name
+
+# delete folder if there're sub-folders & quite mode
+rmdir /s /q folder_name
