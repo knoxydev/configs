@@ -1,0 +1,25 @@
+[FLAGS]: chrome://flags/
+
+smooth scrolling
+enabled
+
+gpu rasterization
+enabled
+
+tab scrolling
+enabled - tabs shrink to a large width
+
+chrome refresh 2023
+disabled
+
+Chrome WebUI Refresh 2023
+disabled
+
+Chrome Refresh 2023 New Tab Button
+disabled
+
+Chrome Refresh 2023 Top Chrome Font Style
+disabled
+
+Customize Chrome Side Panel
+disabled
