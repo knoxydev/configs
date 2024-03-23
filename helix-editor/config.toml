@@ -1,10 +1,14 @@
-theme = "default"
+theme = "acme_knoxy"
 
 [editor]
 line-number = "absolute"
 mouse = true
 cursorcolumn = false
 cursorline = true
+gutters = ["diff", "line-numbers", "spacer"]
+
+[editor.lsp]
+display-messages = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -16,7 +20,7 @@ hidden = false
 
 [editor.indent-guides]
 render = true
-character = "|" # Some characters that work well: "▏", "┆", "┊", "⸽"
+character = "┆" # Some characters that work well: "▏", "┆", "┊", "⸽"
 skip-levels = 1
 
 [editor.whitespace.render]
@@ -33,3 +37,25 @@ tabpad = "·" # Tabs will look like "→···" (depending on tab width)
 
 [keys.normal]
 C-s = ":w"
+C-v = "paste_clipboard_before"
+C-c = ":clipboard-yank"
+C-z = "undo"
+C-y = "redo"
+C-a = "select_all"
+
+[keys.insert]
+C-s = ":w!"
+C-v = "paste_clipboard_before"
+C-a = "select_all"
+
+[keys.select]
+C-c = ":clipboard-yank"
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "file-modification-indicator"]
+center = []
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORM"
+mode.insert = "INSR"
+mode.select = "SELT"

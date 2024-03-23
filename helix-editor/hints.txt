@@ -1,0 +1,10 @@
+[NORMAL MODE]
+w - Move forward to before the beginning of the next word.
+b - Move backward to the beginning of the current word.
+
+[SELECT MODE]
+Type x to select the line
+Type x twice or type 2x to select 2 lines
+
+[INDENTING LINES]
+Type > to indent a line and < to outdent it.
