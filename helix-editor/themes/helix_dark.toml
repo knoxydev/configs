@@ -12,7 +12,7 @@
 "ui.virtual.indent-guide" = { fg = "darker_grey" }
 
 "ui.cursor" = { bg = "red" }
-"ui.cursor.match" = { fg = "prpl_darker", bg = "prpl_light" }
+"ui.cursor.match" = { fg = "white", bg = "#8C00FF" }
 "ui.cursorline.primary" = { bg = "line_bg" }
 "ui.cursorline.secondary" = { bg = "line_bg" }
 "ui.cursorcolumn.secondary" = { bg = "red" }
@@ -51,7 +51,7 @@
 "ui.bufferline" = { fg = "black", bg = "acme_bar_bg" }
 "ui.bufferline.active" = { fg = "black", bg = "acme_bg" }
 "diff.plus" = {fg = "green"}
-"diff.delta" = { fg = "black" }
+"diff.delta" = { fg = "prpl_bg" }
 "diff.minus" = {fg = "red"}
 
 
