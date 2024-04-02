@@ -1,4 +1,4 @@
-theme = "acme_knoxy"
+theme = "helix_dark"
 
 [editor]
 line-number = "absolute"
@@ -42,6 +42,7 @@ C-c = ":clipboard-yank"
 C-z = "undo"
 C-y = "redo"
 C-a = "select_all"
+C-m = "toggle_comments"
 
 [keys.insert]
 C-s = ":w!"
