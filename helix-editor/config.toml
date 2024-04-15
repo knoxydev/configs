@@ -42,15 +42,17 @@ C-c = ":clipboard-yank"
 C-z = "undo"
 C-y = "redo"
 C-a = "select_all"
-C-m = "toggle_comments"
+C-q = "toggle_comments"
 
 [keys.insert]
 C-s = ":w!"
 C-v = "paste_clipboard_before"
 C-a = "select_all"
+C-q = "toggle_comments"
 
 [keys.select]
 C-c = ":clipboard-yank"
+C-q = "toggle_comments"
 
 [editor.statusline]
 left = ["mode", "spinner", "file-name", "file-modification-indicator"]

@@ -44,7 +44,7 @@
 "ui.popup" = {fg="white", bg="prpl_darker"}
 "ui.menu" = {fg="prpl_light", bg="prpl_darker"}
 "ui.menu.selected" = {bg="acme_bg", fg="black"}
-"ui.window" = {bg="acme_bg"}
+"ui.window" = {bg="white"}
 "diagnostic.error" = {bg="red", fg="white", modifiers=["bold"]}
 "diagnostic.warning" = {bg="orange", fg="black", modifiers=["bold"]}
 "diagnostic.hint" = {fg="gray", modifiers=["bold"]}
