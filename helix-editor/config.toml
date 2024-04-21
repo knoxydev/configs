@@ -8,7 +8,9 @@ cursorline = true
 gutters = ["diff", "line-numbers", "spacer"]
 
 [editor.lsp]
-display-messages = true
+enable = false
+auto-signature-help = false
+display-messages = false
 
 [editor.cursor-shape]
 insert = "bar"
@@ -43,6 +45,8 @@ C-z = "undo"
 C-y = "redo"
 C-a = "select_all"
 C-q = "toggle_comments"
+o = ["goto_first_nonwhitespace"]
+p = ["goto_line_end"]
 
 [keys.insert]
 C-s = ":w!"
@@ -53,6 +57,8 @@ C-q = "toggle_comments"
 [keys.select]
 C-c = ":clipboard-yank"
 C-q = "toggle_comments"
+o = ["goto_first_nonwhitespace"]
+p = ["goto_line_end"]
 
 [editor.statusline]
 left = ["mode", "spinner", "file-name", "file-modification-indicator"]

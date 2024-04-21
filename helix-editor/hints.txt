@@ -1,10 +1,42 @@
 [NORMAL MODE]
 w - Move forward to before the beginning of the next word.
 b - Move backward to the beginning of the current word.
+o - move to the start of line
+p - move to the end of line
 
 [SELECT MODE]
 Type x to select the line
 Type x twice or type 2x to select 2 lines
+o - move to the start of line
+p - move to the end of line
 
 [INDENTING LINES]
 Type > to indent a line and < to outdent it.
+
+
+----------
+
+
+[keys.normal]
+C-s = ":w"
+C-v = "paste_clipboard_before"
+C-c = ":clipboard-yank"
+C-z = "undo"
+C-y = "redo"
+C-a = "select_all"
+C-q = "toggle_comments"
+o = ["goto_first_nonwhitespace"]
+p = ["goto_line_end"]
+
+[keys.insert]
+C-s = ":w!"
+C-v = "paste_clipboard_before"
+C-a = "select_all"
+C-q = "toggle_comments"
+
+[keys.select]
+C-c = ":clipboard-yank"
+C-q = "toggle_comments"
+o = ["goto_first_nonwhitespace"]
+p = ["goto_line_end"]
+

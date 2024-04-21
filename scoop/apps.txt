@@ -14,5 +14,9 @@ terminal JSON viewer & processor
 terminal file manager
 [https://github.com/gokcehan/lf]
 
+- ripgrep
+ripgrep recursively searches directories for a regex pattern
+[https://github.com/BurntSushi/ripgrep]
+
 - helix
 - micro
