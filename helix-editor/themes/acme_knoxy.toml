@@ -12,7 +12,7 @@
 "ui.virtual.indent-guide" = { fg = "#212121" }
 
 
-"ui.cursor.match" = { fg = "red" }
+"ui.cursor.match" = { fg = "str" }
 "ui.cursorline.primary" = { bg = "#121212" }
 
 
@@ -20,24 +20,25 @@
 "ui.highlight.frameline" = {bg="#da8581"}
 
 
-"type" = "#19BE6A"
-"type.builtin" = "#19BE6A"
-"string" = "red"
+"type" = "type_clr"
+"type.builtin" = "type_clr"
+"string" = "str"
+"punctuation.bracket" = "bracket_clr"
 "comment" = "#404040"
-"constant" = "#EE3732"
+"constant" = "str"
 "function.macro" = "#9282EE"
-"keyword.control.conditional" = "#05BDBA"
-"keyword.control.repeat" = "#05BDBA"
-"keyword.control.return" = "#05BDBA"
-"keyword.control.import" = "#05BDBA"
-"keyword.function" = "#05BDBA"
-"keyword.storage" = "#05BDBA"
-"keyword" = "#05BDBA"
+"keyword.control.conditional" = "main_clr"
+"keyword.control.repeat" = "main_clr"
+"keyword.control.return" = "main_clr"
+"keyword.control.import" = "main_clr"
+"keyword.function" = "main_clr"
+"keyword.storage" = "main_clr"
+"keyword" = "main_clr"
 
 
-"ui.help" = {fg="white", bg="#1E1E1E"}
-"ui.popup" = {fg="black", bg="#1E1E1E"}
-"ui.menu" = {fg="white", bg="#1E1E1E"}
+"ui.help" = {fg="white", bg="black"}
+"ui.popup" = {fg="white", bg="black"}
+"ui.menu" = {fg="white", bg="black"}
 "ui.menu.selected" = {bg="acme_bg", fg="black"}
 "ui.window" = {bg="acme_bg"}
 "diagnostic.error" = {bg="red", fg="white", modifiers=["bold"]}
@@ -62,4 +63,7 @@ green = "#065905"
 indent = "#aaaaaa"
 orange = "#f0ad4e"
 gray = "#777777"
-
+main_clr = "#00FFD0" #05BDBA
+bracket_clr = "#999999"
+str = "#F36791" #FF456F
+type_clr = "#28CD79" #19BE6A
