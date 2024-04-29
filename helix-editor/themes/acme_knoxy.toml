@@ -3,7 +3,7 @@
 "ui.background" = {bg="black"}
 "ui.text" = "white"
 "ui.linenr" = {bg="black", fg="#404040"}
-"ui.linenr.selected" = {bg="black", fg="white"}
+"ui.linenr.selected" = {bg="#121212", fg="white"}
 "ui.selection" = {bg="white", fg="black"}
 "ui.statusline" = { fg="#565656", bg="black" }
 "ui.statusline.inactive" = {fg="black", bg="acme_bar_inactive"}
@@ -12,7 +12,7 @@
 "ui.virtual.indent-guide" = { fg = "#212121" }
 
 
-"ui.cursor.match" = { fg = "str" }
+"ui.cursor.match" = { fg = "white", bg = "red" }
 "ui.cursorline.primary" = { bg = "#121212" }
 
 

@@ -74,4 +74,3 @@ let g:neovide_scroll_animation_length = 0.4
 " Plug 'B4mbus/oxocarbon-lua.nvim'
 " :GuiAdaptiveStyle
 " :GuiAdaptiveColor 1
-
