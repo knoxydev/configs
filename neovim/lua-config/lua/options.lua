@@ -38,8 +38,10 @@ vim.o.completeopt        = "menuone,noinsert,noselect"
 vim.o.wildmode           = "longest,full"               -- Display auto-complete in Command Mode
 vim.o.updatetime         = 300                          -- Delay until write to Swap and HoldCommand event
 vim.g.do_file_type_lua   = 1
+vim.g.rust_recommended_style = false
 
 
+-- NEOVIDE SETTINGS
 if vim.g.neovide then
   vim.g.neovide_scale_factor = 0.9
   vim.g.neovide_scroll_animation_length = 0.4
@@ -47,5 +49,5 @@ if vim.g.neovide then
   vim.g.neovide_cursor_animation_length = 0
   vim.g.neovide_cursor_animate_command_line = false
   vim.g.neovide_cursor_smooth_blink = true
-end
 
+end

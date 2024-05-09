@@ -51,6 +51,7 @@ return require('packer').startup(function(use)
 
 
   use 'B4mbus/oxocarbon-lua.nvim'
+  use "n1ghtmare/noirblaze-vim"
 
 
   use "lukas-reineke/indent-blankline.nvim"
