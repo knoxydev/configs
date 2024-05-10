@@ -50,8 +50,10 @@ return require('packer').startup(function(use)
   use({'wbthomason/packer.nvim', opt = true})
 
 
-  use 'B4mbus/oxocarbon-lua.nvim'
+  use "B4mbus/oxocarbon-lua.nvim"
   use "n1ghtmare/noirblaze-vim"
+  use "huyvohcmc/atlas.vim"
+  -- LIGHT use "cideM/yui"
 
 
   use "lukas-reineke/indent-blankline.nvim"
