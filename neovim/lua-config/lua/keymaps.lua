@@ -15,7 +15,6 @@ local inoremap = Utils.inoremap
 vim.g.mapleader = "/"
 vim.g.maplocalleader = " "
 
-
 -- kj to normal mode
 inoremap("kj", "<Esc>")
 
@@ -107,6 +106,30 @@ nnoremap("<leader>lg", "<Cmd>Telescope live_grep<CR>")
 nnoremap("<leader>fml", '<Cmd>CellularAutomaton make_it_rain<CR>')
 
 
+-- gomove
+local map = vim.api.nvim_set_keymap
+map( "n", "<S-h>", "<Plug>GoNSMLeft", {} )
+map( "n", "<S-j>", "<Plug>GoNSMDown", {} )
+map( "n", "<S-k>", "<Plug>GoNSMUp", {} )
+map( "n", "<S-l>", "<Plug>GoNSMRight", {} )
+
+map( "x", "<S-h>", "<Plug>GoVSMLeft", {} )
+map( "x", "<S-j>", "<Plug>GoVSMDown", {} )
+map( "x", "<S-k>", "<Plug>GoVSMUp", {} )
+map( "x", "<S-l>", "<Plug>GoVSMRight", {} )
+
+map( "n", "<C-h>", "<Plug>GoNSDLeft", {} )
+map( "n", "<C-j>", "<Plug>GoNSDDown", {} )
+map( "n", "<C-k>", "<Plug>GoNSDUp", {} )
+map( "n", "<C-l>", "<Plug>GoNSDRight", {} )
+
+map( "x", "<C-h>", "<Plug>GoVSDLeft", {} )
+map( "x", "<C-j>", "<Plug>GoVSDDown", {} )
+map( "x", "<C-k>", "<Plug>GoVSDUp", {} )
+map( "x", "<C-l>", "<Plug>GoVSDRight", {} )
+
+
+
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
@@ -124,6 +147,14 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- MOVE SELECT BLOCK UP
 vim.api.nvim_set_keymap("v", "<C-c>", '"*y :let @+=@*<CR>', {noremap=true, silent=true})
 vim.api.nvim_set_keymap("v", "<C-v>", '"+p', {noremap=true, silent=true})
 
+-- comment.nvim
+-- `gc` - Toggles the region using linewise comment
+-- `gb` - Toggles the region using blockwise comment
+
+local opts = { noremap = true, silent = true }
+vim.keymap.set("v", "<Tab>", ">gv", opts)
+vim.keymap.set("v", "<S-Tab>", "<gv", opts)
+
 
 -- NORMAL
 vim.api.nvim_set_keymap("n", "<C-c>", '"*y :let @+=@*<CR>', {noremap=true, silent=true})
@@ -131,4 +162,6 @@ vim.api.nvim_set_keymap("n", "<C-v>", '"+p', {noremap=true, silent=true})
 
 
 -- INSERT
+
+
 

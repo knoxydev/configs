@@ -61,13 +61,29 @@ return require('packer').startup(function(use)
 
 
   use {
+    'numToStr/Comment.nvim',
+    config = function()
+      local ft = require('Comment').setup()
+
+      ft.set('yaml', '#%s').set('javascript', {'//%s', '/*%s*/'})
+
+      ft.javascript = {'//%s', '/*%s*/'}
+      ft.yaml = '#%s'
+
+      ft({'go', 'rust'}, ft.get('c'))
+      ft({'toml', 'graphql'}, '#%s')
+    end
+  }
+
+
+  use {
     "windwp/nvim-autopairs",
     event = "InsertEnter",
     config = function()
       require("nvim-autopairs").setup {}
     end
   }
-
+  
 
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.6',

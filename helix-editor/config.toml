@@ -1,4 +1,4 @@
-theme = "helix_dark"
+theme = "acme_knoxy"
 
 [editor]
 line-number = "absolute"
