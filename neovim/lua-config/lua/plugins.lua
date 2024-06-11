@@ -91,19 +91,37 @@ return require('packer').startup(function(use)
   }
 
 
+ 
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
+  
+  local custom_moonfly = require 'lualine.themes.moonfly'
+  custom_moonfly.normal.a.bg = '#212121'
+  custom_moonfly.normal.b.bg = '#212121'
+  custom_moonfly.normal.c.bg = '#212121'
+  
+  custom_moonfly.insert.a.bg = '#212121'
+  custom_moonfly.insert.b.bg = '#212121'
+  
+  custom_moonfly.visual.a.bg = '#212121'
+  custom_moonfly.visual.b.bg = '#212121'
+
+  custom_moonfly.normal.a.fg = '#C6C6C6'
+  custom_moonfly.insert.a.fg = '#C6C6C6'
+  custom_moonfly.visual.a.fg = '#C6C6C6'
+  
   require('lualine').setup {
     options = {
-      theme = 'moonfly',
+      theme = custom_moonfly,
       section_separators = '', component_separators = '',
     },
     sections = {
       lualine_a = { {'mode', fmt = function(s) return mode_map[s] or s end} },
     }
   }
+  
 
   
   -- use {'oneslash/helix-nvim', tag = "*"}  

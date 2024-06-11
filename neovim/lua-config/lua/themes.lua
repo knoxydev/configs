@@ -13,3 +13,4 @@ vim.cmd.colorscheme 'atlas'
 
 -- LIGHT
 -- vim.cmd.colorscheme 'yui'
+
