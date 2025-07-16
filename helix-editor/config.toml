@@ -22,8 +22,8 @@ hidden = false
 
 [editor.indent-guides]
 render = true
-character = "┆" # Some characters that work well: "▏", "┆", "┊", "⸽"
-skip-levels = 1
+character = "┆"
+skip-levels = 0
 
 [editor.whitespace.render]
 space = "none"
@@ -31,11 +31,11 @@ tab = "none"
 newline = "none"
 
 [editor.whitespace.characters]
-space = "·"
+space = "."
 nbsp = "⍽"
 tab = "→"
 newline = "⏎"
-tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+tabpad = "." # Tabs will look like "" (depending on tab width)
 
 [keys.normal]
 C-s = ":w"
@@ -64,7 +64,9 @@ end = "goto_line_end"
 left = ["mode", "spinner", "file-name", "file-modification-indicator"]
 center = []
 right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
-separator = "│"
+separator = ""
 mode.normal = "NORM"
 mode.insert = "INSR"
 mode.select = "SELT"
+
+

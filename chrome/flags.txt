@@ -23,3 +23,7 @@ disabled
 
 Customize Chrome Side Panel
 disabled
+
+Experimental QUIC protocol
+#enable-quic
+enabled
