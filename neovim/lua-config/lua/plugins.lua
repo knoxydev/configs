@@ -33,7 +33,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 -- Load Packer
-cmd([[packadd packer.nvim]])
+vim.cmd [[packadd packer.nvim]]
 
 -- Rerun PackerCompile everytime pluggins.lua is updated
 cmd([[
