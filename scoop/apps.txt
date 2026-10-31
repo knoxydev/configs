@@ -20,3 +20,6 @@ ripgrep recursively searches directories for a regex pattern
 
 - helix
 - micro
+
+- broot
+[https://github.com/Canop/broot]
